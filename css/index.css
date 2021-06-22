@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------Home page----------*/
+
+/*go to top button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+/* Navbar image */
+.navbar-brand img{
+    width: 30px;
+}
+
+/* Padding the flag move down and background color*/
+#flags {
+    padding-top: 20px;
+    background-color: #CDCDCD;
+}
+
+/* Make the flag full size */
+.col-md-1 img{
+    width: 100%;
+}
+
+/* Center the flag name */
+.name{
+    text-align: center;    
+}
+
+/* Language selector image size */
+.dropdown-menu img{
+    width: 20%;
+}
+
+/* National circle flags image size */
+.list-group-item img{
+    width: 35%;
+}
+
+/*list group of countries*/
+.countries {
+    padding-top: 20px;
+}
+
+.footer p {
+    text-align: center;    
+}
+
+/*image shadow animation*/
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*----------contact us page----------*/
+
+/*header image*/
+.help img{
+    width: 100%;
+    height: 600px;    
+}
+
+/*Google map*/
+#map{
+height: 300px;
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+}
+
+#map iframe{
+border:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+
+/*----------china page----------*/
+
+/*button to the right*/
+.dropdown{
+    text-align: right;    
+}
+
+/*padding dropdown botton*/
+#btn {
+    padding-bottom: 15px;
+}
+
+/*page move to center*/
+#page {
+    text-align: center;
+}
+
+/*----------updata page----------*/
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  animation: spin 2s linear infinite;
+}
+
+/* Safari animation*/
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+/*dispaly content*/
+#myPage {
+  display: none;
+  text-align: center;
+}
+/*padding container*/
+#update {
+    padding-bottom: 550px;
+}

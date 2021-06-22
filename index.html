@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <title>All Travel</title>
+      
+    <!--link to css-->
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+      
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+    </script>
+      
+  </head>
+    
+  <body>    
+  <!--go to top button-->   
+  <button onclick="topFunction()" id="myBtn">Top</button>
+      
+  <header class="header">    
+  <!--navigtion bar-->      
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="images/logo/TV.jpeg" alt="logo" class="img-rounded hover-shadow"/></a>
+      </div>
+        
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="defaultNavbar1">
+          
+        <!--input text diagram-->
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" required="required" class="form-control" id="search" placeholder="Please enter key words">
+          </div>
+            <button type="submit"  class="btn btn-default">Search</button>
+        </form>
+        
+        <!--Language selector-->  
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language<span class="caret"></span>
+              </a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="list-group-item disabled">
+                  <img src="images/flags/UK.png" alt=""/> English
+                  </a>
+              </li>
+                
+              <li><a href="#" class="list-group-item disabled">
+                  <img src="images/flags/China.png" alt=""/> Chinese </a>
+              </li>
+                
+              <li><a href="#" class="list-group-item disabled">
+                  <img src="images/flags/Brazil.png" alt=""/>Portuguese
+                  </a>
+                </li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse --> 
+    </div><!-- /.container-fluid -->
+  </nav>
+ </header>      
+    
+<!--carousel diagram-->
+<div id="carousel1" class="carousel slide " data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+      <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel1" data-slide-to="1"></li>
+      <li data-target="#carousel1" data-slide-to="2"></li>
+  </ol>
+    <!--Wrapper for slides-->
+    <div class="carousel-inner" role="listbox">
+        
+      <div class="item active">
+          <img src="images/city/France.jpg" alt="france" class="center-block"/>
+          <div class="carousel-caption">
+          <h3>The Eiffel Tower</h3>
+          </div>
+      </div>
+        
+      <div class="item">
+          <img src="images/city/beijig.jpg" alt="beijing" class="center-block"/>
+          <div class="carousel-caption">
+          <h3>The Forbidden City</h3>
+          </div>
+      </div>
+        
+      <div class="item">
+          <img src="images/city/Brazil.jpg" alt="brazil" class="center-block"/>
+          <div class="carousel-caption">
+          <h3>Christ the Redeemer</h3>
+          </div>
+      </div>
+    </div>
+    
+    <!--Left and right control buttons-->
+    <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!---->
+<div class="container-fluid " id="flags">
+    
+  <div class="row">
+      
+    <div class="col-md-1 col-md-offset-1">
+        <a href="https://maps.google.com"><img src="images/logo/diqiu.jpg" alt="" class="img-rounded hover-shadow"/></a>
+      </div>
+      
+    <div class="col-md-1">
+        <a href="China_Info.html"><img src="images/flags/China.png" alt="China" class="img-rounded hover-shadow"/></a>
+        <p class="name">China</p>
+    </div>
+      
+    <div class="col-md-1">
+        <a href="brazil_info.html"><img src="images/flags/Brazil.png" alt="Brazil" class="img-rounded hover-shadow"/></a>
+        <p class="name">Brazil</p>
+      </div>
+      
+    <div class="col-md-1">
+        <a href="update.html"><img src="images/flags/Italy.png" alt="Italy" class="img-rounded hover-shadow"/></a>
+        <p class="name">Italy</p>
+      </div>
+      
+    <div class="col-md-1">
+        <a href="update.html"><img src="images/flags/France.png" alt="France" class="img-rounded hover-shadow"/></a>
+        <p class="name">France</p>
+      </div>
+      
+    <div class="col-md-1">
+        <a href="update.html"><img src="images/flags/Japan.png" alt="Japan" class="img-rounded hover-shadow"/></a>
+        <p class="name">Japan</p>
+      </div>
+      
+    <div class="col-md-1">
+        <a href="update.html"><img src="images/flags/Spain.png" alt="Spain" class="img-rounded hover-shadow"/></a>
+        <p class="name">Spain</p>
+      </div>
+      
+    <div class="col-md-1">
+        <a href="update.html"><img src="images/flags/Argentina.png" alt="Argentina" class="img-rounded hover-shadow"/></a>
+        <p class="name">Argentina</p>
+      </div>
+      
+    <div class="col-md-1">
+        <a href="update.html"><img src="images/flags/South_Korea.png" alt="Korea" class="img-rounded hover-shadow"/></a>
+        <p class="name">Korea</p>
+      </div>
+      
+    <div class="col-md-1">
+        <a href="update.html"><img src="images/flags/Russia.png" alt="Russia" class="img-rounded hover-shadow"/></a>
+        <p class="name">Russia</p>
+      </div>
+       
+  </div>
+</div>
+
+<!--group of world-->
+<div class="container countries">
+  <div class="row ">
+      <div class="col-md-2">
+          <div class="list-group">
+              <a href="#" class="list-group-item disabled"><h4>Asia</h4></a>
+              
+              <a href="China_Info.html" class="list-group-item list-group-item-info">
+                  <img src="images/flags/China.png" alt="" class="img-circle"/> China
+              </a>
+              <a href="update.html" class="list-group-item list-group-item-success">
+                  <img src="images/flags/Japan.png" alt="" class="img-circle"/> Japan
+              </a>
+              <a href="update.html" class="list-group-item list-group-item-warning">
+                  <img src="images/flags/South_Korea.png" alt="" class="img-circle"/> Korea
+              </a>
+              <a href="update.html" class="list-group-item list-group-item-danger">
+                  <img src="images/flags/Thailand.png"  alt="" class="img-circle"/> Thailand
+              </a>
+          </div>
+      </div>
+      
+    <div class="col-md-2">
+          <div class="list-group">
+            <a href="#" class="list-group-item disabled"><h4>Europe</h4></a>
+              
+              <a href="update.html" class="list-group-item list-group-item-info">
+                  <img src="images/flags/Italy.png" alt="" class="img-circle"/> Italy
+              </a>
+              
+              <a href="update.html" class="list-group-item list-group-item-success">
+                  <img src="images/flags/Spain.png" alt="" class="img-circle"/> Spain
+              </a> 
+              <a href="update.html" class="list-group-item list-group-item-warning">
+                  <img src="images/flags/France.png" alt="" class="img-circle"/> France
+              </a>
+              
+              <a href="update.html" class="list-group-item list-group-item-danger">
+                  <img src="images/flags/Germany.png" alt="" class="img-circle"/> Germany
+              </a>
+         </div>
+      </div>
+      
+      <div class="col-md-2">
+          <div class="list-group">
+              <a href="#" class="list-group-item disabled"><h4>North America</h4></a>
+              
+              <a href="update.html" class="list-group-item list-group-item-info">
+                  <img src="images/flags/USA.png" alt="" class="img-circle"/> United States
+              </a>
+              
+              <a href="update.html" class="list-group-item list-group-item-success">
+                  <img src="images/flags/Canada.png" alt="" class="img-circle"/> Canada
+              </a>
+              
+              <a href="update.html" class="list-group-item list-group-item-warning">
+                  <img src="images/flags/Mexico.png" alt="" class="img-circle"/> Mexico
+              </a>
+              
+              <a href="update.html" class="list-group-item list-group-item-danger">
+                  <img src="images/flags/Nicaragua.png" alt="" class="img-circle"/> Nicaragua
+              </a>
+          </div>
+      </div>
+      <div class="col-md-2">
+          <div class="list-group">
+              <a href="#" class="list-group-item disabled"><h4>South America</h4></a>
+              
+              <a href="brazil_info.html" class="list-group-item list-group-item-info">
+                  <img src="images/flags/Brazil.png" alt="" class="img-circle"/> Brazil
+              </a>
+              
+              <a href="update.html" class="list-group-item list-group-item-success">
+                  <img src="images/flags/Uruguay.png" alt="" class="img-circle"/> Uruguay
+              </a>
+              
+              <a href="update.html" class="list-group-item list-group-item-warning">
+                  <img src="images/flags/Colombia.png"  alt="" class="img-circle"/> Colombia
+              </a>
+              
+              <a href="update.html" class="list-group-item list-group-item-danger">
+                  <img src="images/flags/Argentina.png" alt="" class="img-circle"/> Argentina
+              </a>
+          </div>
+      </div>
+      <div class="col-md-2">
+          <div class="list-group">
+              <a href="#" class="list-group-item disabled"><h4>Africa</h4></a>
+              
+              <a href="update.html" class="list-group-item list-group-item-info">
+                  <img src="images/flags/Egypt.png" alt="" class="img-circle"/> Egypt
+              </a>
+              
+              <a href="update.html" class="list-group-item list-group-item-success">
+                  <img src="images/flags/Congo.png" alt="" class="img-circle"/> Congo
+              </a>
+              
+              <a href="update.html" class="list-group-item list-group-item-warning">
+                  <img src="images/flags/Algeria.png" alt="" class="img-circle"/> Algeria
+              </a>
+              
+              <a href="update.html" class="list-group-item list-group-item-danger">
+                  <img src="images/flags/Morocco.png" alt="" class="img-circle"/> Morocco
+              </a>
+          </div>
+      </div>
+      <div class="col-md-2">
+          <div class="list-group">
+              <a href="#" class="list-group-item disabled"><h4>Oceania</h4></a>
+              
+              <a href="update.html" class="list-group-item list-group-item-info">
+                  <img src="images/flags/New_Zealand.png" alt="" class="img-circle"/> New Zealand
+                  <br><br>
+              </a>
+              
+              <a href="update.html" class="list-group-item list-group-item-success">
+                  <img src="images/flags/Australia.png" alt="" class="img-circle"/> Australia 
+              </a>
+              
+              <a href="update.html" class="list-group-item list-group-item-warning">
+                  <img src="images/flags/Samoa.png" alt="" class="img-circle"/> Samoa
+              </a>
+              
+              <a href="update.html" class="list-group-item list-group-item-danger">
+                <img src="images/flags/Kiribati.png" alt="" class="img-circle"/> Kiribati 
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--Thumbnail content-->     
+<div class="container">
+    <div class="row">
+        
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail hover-shadow">
+          <a href="scenery.html"><img src="images/landscape.jpg" alt="scenery" class="img-rounded"/></a>
+          <div class="caption">
+          <h3>Famous scenery</h3>
+          </div>
+        </div>
+      </div>
+        
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail hover-shadow">
+          <a href="update.html"><img src="images/shopping.jpg" alt="shopping centers" class="img-rounded"/></a>
+          <div class="caption">
+          <h3>Famous mall</h3>
+          </div>
+        </div>
+      </div>  
+        
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail hover-shadow">
+          <a href="cuisine.html"><img src="images/foods.jpg" alt="foods" class="img-rounded"/></a>
+          <div class="caption">
+          <h3>Famous cuisine</h3>
+          </div>
+        </div>
+      </div>     
+    </div>  
+</div>
+      
+<!--footer-->
+<footer class="footer">     
+    <div class="panel-footer"> 
+        <p>Copyright &copy; 2019</p>
+    </div>
+</footer>
+      
+<!--link to javaScript-->
+<script src="JavaScript/index.js"></script>      
+</body>
+</html>
